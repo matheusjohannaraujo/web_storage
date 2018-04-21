@@ -1,5 +1,5 @@
 <!--
-
+	Obs.: Este código na prática é uma GAMBIARRA, favor não levar a sério.
 	Autor: Matheus Johann Araújo <matheusjohannaraujo@gmail.com>
  	Residente: Brasil - Pernambuco - Jaboatão dos Guararapes
  	Data de criação: 26/12/2016
@@ -39,7 +39,6 @@
 </script>
 <?php
 	//Local Storage	
-	$localStorage = new LocalStorage();
 	class LocalStorage
 	{
 		//Seta item com "CHAVE" e "VALOR" no localStorage
@@ -61,7 +60,7 @@
 					if(localStorage.getItem('$key') != null)
 						CriarCookie('$key', localStorage.getItem('$key'));
 				</script>";		
-			return @$_COOKIE[$key];
+			return $_COOKIE[$key] ?? false;
 		}
 
 		// Remove a item do localStorage através de sua "CHAVE"
@@ -78,7 +77,6 @@
 	}
 	
 	//Session Storage
-	$sessionStorage = new SessionStorage();
 	class SessionStorage
 	{
 		//Seta item com "CHAVE" e "VALOR" no sessionStorage
@@ -100,7 +98,7 @@
 					if(sessionStorage.getItem('$key') != null)
 						CriarCookie('$key', sessionStorage.getItem('$key'));
 				</script>";		
-			return @$_COOKIE[$key];
+			return $_COOKIE[$key] ?? false;
 		}
 
 		// Remove a item do sessionStorage através de sua "CHAVE"
@@ -116,22 +114,17 @@
 		}
 	}
 
-
 	//Usando o localStorage via PHP
-
-	$localStorage::setItem("Pernambuco", "Jaboatão dos Guararapes");
-
-	echo $localStorage::getItem("Pernambuco");
-
+	$localStorage = new LocalStorage();
+	$localStorage->setItem("Pernambuco", "Jaboatão dos Guararapes");
+	echo "<br>" . $localStorage->getItem("Pernambuco");
+	$sessionStorage->clear();
 
 	//Usando o sessionStorage via PHP
-	$sessionStorage::setItem("CDC", "Ciência da Computação");
-
-	$sessionStorage::setItem("Estudante", "Matheus Johann Araújo");
-
-	echo "<br>".$sessionStorage::getItem("CDC");
-
-	echo "<br>".$sessionStorage::getItem("Estudante");
-
-	$sessionStorage::clear();
+	$sessionStorage = new SessionStorage();
+	$sessionStorage->setItem("CDC", "Ciência da Computação");
+	$sessionStorage->setItem("Estudante", "Matheus Johann Araújo");
+	echo "<br>" . $sessionStorage->getItem("CDC");
+	echo "<br>" . $sessionStorage->getItem("Estudante");
+	$sessionStorage->clear();
 ?>

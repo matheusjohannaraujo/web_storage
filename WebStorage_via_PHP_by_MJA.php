@@ -1,12 +1,9 @@
 <!--
 
-	Site: http://carregandoosite.ptblogs.com
-	Estudante de Ciência da Computação
- 	Autor: Matheus Johann Araújo <matheusjohannaraujo@gmail.com>
+	Autor: Matheus Johann Araújo <matheusjohannaraujo@gmail.com>
  	Residente: Brasil - Pernambuco - Jaboatão dos Guararapes
  	Data de criação: 26/12/2016
  	Versão 1.0
-
  -->
 <script>
 	//Cria cookie com "NOME" e "VALOR"

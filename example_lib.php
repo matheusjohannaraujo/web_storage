@@ -1,8 +1,8 @@
 <!--
 	Obs.: Este código na prática é uma GAMBIARRA, favor não levar a sério.
-	Autor: Matheus Johann Araújo <matheusjohannaraujo@gmail.com>
- 	Residente: Brasil - Pernambuco - Jaboatão dos Guararapes
- 	Data de criação: 26/12/2015
+	Autor: Matheus Johann Araújo
+ 	Brasil\Pernambuco
+ 	Data: 26/12/2015
  -->
 <script>
 	//Cria cookie com "NOME" e "VALOR"

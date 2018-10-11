@@ -3,6 +3,7 @@
 	Autor: Matheus Johann Araújo
  	Brasil\Pernambuco
  	Data: 26/12/2015
+	Bitbucket: https://bitbucket.org/matheusjohannaraujo/web_storage/
  -->
 <script>
 	//Cria cookie com "NOME" e "VALOR"

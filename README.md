@@ -1,0 +1,1 @@
+OBS.: Funciona, mas não é recomendado (fim demonstrativo) >>> WebStorage - Usando o localStorage e sessionStorage do HTML5 no PHP, foi integrado os métodos padrões Local e Session Storage do JavaScript no PHP.
